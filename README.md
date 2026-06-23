@@ -23,7 +23,7 @@ optional arguments:
                         output.html
   -r REGEX, --regex REGEX
                         RegEx for filtering purposes against found endpoint
-                        (e.g: ^/api/)
+                        (e.g: ^/v1.0/)
   -b, --burp            Support burp exported file
   -c COOKIE, --cookie COOKIE
                         Add cookies for authenticated JS files
@@ -66,7 +66,7 @@ $ python3 versionFinder.py
 
 - Ignore certain js file (like external libs) provided by `-g --ignore`
 
-`python3 versionFinder.py -i https://example.com/ -e -g 'jquery;bootstrap;api.google.com'`
+`python3 versionFinder.py -i https://example.com/ -e -g 'jquery;bootstrap'`
 
 - Process only certain js file provided by `-n --only`:
 
@@ -74,11 +74,11 @@ $ python3 versionFinder.py
 
 - Use your regex:
 
-`python3 versionFinder.py -i https://example.com/1.js -o cli -r 'apikey=my.api.key[a-zA-Z]+'`
+`python3 versionFinder.py -i https://example.com/1.js -o cli -r 'version=v[a-zA-Z]+'`
 
 - Other options: add headers,proxy and cookies:
 
-``python3 versionFinder.py -i https://example.com/ -e -o cli -c 'mysessionid=111234' -H 'x-header:value1\nx-header2:value2' -p 127.0.0.1:8080 -r 'apikey=my.api.key[a-zA-Z]+'``
+``python3 versionFinder.py -i https://example.com/ -e -o cli -c 'mysessionid=111234' -H 'x-header:value1\nx-header2:value2' -p 127.0.0.1:8080 -r 'version=v[a-zA-Z]+'``
 
 - Input accept all this entries:
 
