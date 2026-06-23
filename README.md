@@ -1,11 +1,7 @@
 
-## about versionFinder
+## About versionFinder
 
 versionFinder is a python script based on [LinkFinder](https://github.com/GerbenJavado/LinkFinder) and versionFinder (https://github.com/m4ll0k/versionFinder), written for detecting patterns / regex of technology versions displayed in JavaScript files. It does so by using jsbeautifier for python in combination with a fairly large regular expression. The regular expressions consists of four small regular expressions. These are responsible for finding and search anything on js files.
-
-The output is given in HTML or plaintext.
-
-![main](https://i.imgur.com/D7MT2KL.png)
 
 
 
